@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Portfolio';
+
+  constructor(private router: Router){}
+
+  protected navigate(path: string){
+    this.router.navigate([path])
+  }
 }

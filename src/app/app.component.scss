@@ -1,0 +1,43 @@
+$primary-color: #7b1fa2;
+.icon-button {
+    background: $primary-color;
+    border: none;
+}
+
+.no-bg {
+    background: none;
+    color: black;
+}
+
+.vertical-column {
+    border-right-width: 2px;
+    border-right-color: black;
+}
+
+.mat-sidenav-container {
+    // Toolbar height is fixed 64 px so fill viewport minus the 64 px
+    height: calc(100vh - 64px)
+}
+
+.mat-sidenav{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-button {
+    display: flex;
+    flex-grow: 1;
+    width: 200px;
+    background: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-width: 1px;
+    border-bottom-color: lightblue;
+    font-size: 20px;
+    color: $primary-color;
+    padding: .5rem
+}
+.nav-button:hover {
+    background-color: lightgray;
+}
